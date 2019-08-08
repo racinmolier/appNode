@@ -1,0 +1,61 @@
+body{
+    background-color:#f6f6f6;
+}
+.fom{
+	background-color: lightsteelblue;
+	width: 90%;
+    height:90%;
+	border-radius: 10px 10px 10px 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+table{
+	width:90%;
+	
+}
+td form {
+	margin:0;padding:0;
+}
+td form button.button{
+	padding:0.25em;margin:0.25em;
+	background:none;
+	color:blue;
+}
+td form button.button:hover{
+  background:none;
+	color:steelblue;
+}
+
+footer{
+	background-color:steelblue;
+	margin-top: 20px;
+	text-align: center;
+}
+.centrar{
+	padding-top: 10px;
+}
+.centrar2{
+	padding-top: 20px;
+}
+.tabla {
+	background-color: aliceblue;
+}
+
+.has-search .form-control {
+    padding-right: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+

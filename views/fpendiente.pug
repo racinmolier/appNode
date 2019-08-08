@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles2.css"> 
+    <script src="https://kit.fontawesome.com/0c42fed630.js"></script>
+    <title>Area</title>
+</head>
+<div class="container-fluid fom">
+  <form action="">
+    <div class="row">
+      <div class="col-md-2 form-group">
+        <label for="">Unidad</label>
+      </div>
+      <div class="col-md-4 form-group">
+        <select class="form-control" name ="unidad"required>
+          <option>Selecciona una Unidad</option>
+          <option>H01 Hospital Pachuca</option>
+          <option>H02 Hospital Tulancingo</option>
+          <option>DRH Direccion de Recursos Humanos</option>
+        </select>
+      </div>
+      <div class="col-md-2 form-group">
+        <label for="">Area</label>
+      </div>
+      <div class="col-md-4 form-group">
+        <select class="form-control" name="area"required>
+            <option>Selecciona Area</option>
+            <option>Control de Pago</option>
+            <option>Sistematizacion de Pago</option>
+            <option>Relaciones Laborales</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2 form-group">
+        <label for="">Proceso</label>
+      </div>
+      <div class="col-md-4 form-group" name="proceso"required>
+        <select class="form-control">
+          <option>Selecciona el proceso</option>
+          <option>Credenciales</option>
+          <option>CFDI</option>
+          <option>Contratos</option>
+        </select>
+      </div>
+      <div class="col-md-2 form-group">
+          <label for="">Persona</label>
+      </div>
+      <div class="col-md-4 form-group">
+        <select class="form-control"name="persona"required>
+          <option>Selecciona Personal</option>
+          <option>Laura Rodriguez</option>
+          <option>Martha Lopez</option>
+          <option>Jorge Contreras</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2 form-group">
+        <label for="">Fecha Ingreso</label>
+      </div>
+      <div class="col-md-4 form-group class='input-group date'">
+        <input type="date" class="form-control" name="fechaingreso" id="fechaingreso" placeholder="dd/mm/aa"required="true">
+      </div>
+      <div class="col-md-2 form-group">
+        <label for="">Fecha Entrega</label>
+      </div>
+      <div class="col-md-4 form-group class='input-group date'">
+        <input type="date" class="form-control" name="fechaentrega" id="fechaentrega" placeholder="dd/mm/aa" required="true" >
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-2 form-group">
+          <label for="">Prioridad</label>
+      </div>
+      <div class="col-md-4 form-group" name="prioridad" required >
+          <select class="form-control">
+            <option>Selecciona la Prioridad</option>
+            <option>Alta</option>
+            <option>Media</option>
+            <option>Baja</option>
+          </select>  
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2 form-group">
+        <label for="">Descripcion</label>
+      </div>
+      <div class="col-md-10 form-group">
+        <textarea class="form-control rounded-0" id="descripcion" rows="10" required></textarea>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-6 form-group"> 
+      </div>
+      <div class="col-md-3 form-group">
+        <button type="button" class="btn btn-info">Limpiar</button>
+      </div>
+      <div class="col-md-3 form-group">
+        <button class="btn btn-info">Guardar</button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -11,6 +11,11 @@ var procesoRouter = require('./routes/proceso');
 var personalRouter = require('./routes/personal');
 var pendienteRouter = require('./routes/pendiente');
 var unidadRouter = require('./routes/unidad');
+var fareaRouter = require('./routes/farea');
+var funidadRouter = require('./routes/funidad');
+var fpendienteRouter = require('./routes/fpendiente');
+var fprocesoRouter = require('./routes/fproceso');
+
 
 
 var app = express();
@@ -32,6 +37,11 @@ app.use('/pendiente', pendienteRouter);
 app.use('/unidad', unidadRouter);
 app.use('/proceso', procesoRouter);
 app.use('/personal', personalRouter);
+app.use('/farea', fareaRouter);
+app.use('/funidad', funidadRouter);
+app.use('/fproceso', fprocesoRouter);
+app.use('/fpendiente', fpendienteRouter);
+
 
 
 // catch 404 and forward to error handler
