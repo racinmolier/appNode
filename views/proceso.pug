@@ -1,108 +1,102 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles2.css"> 
-    <script src="https://kit.fontawesome.com/0c42fed630.js"></script>
-    <title>Area</title>
-</head>
+extends ./layouts/standar.pug
+block content
 
-<div class="container-fluid fom">
-  <div class="row">
-    <div class="col-md-11">
-      <h3>PROCESO</h3>
-    </div>
-    <div class="col-md-1 centrar">
-      <button type="button" class="btn btn-info">Agregar</button>
-    </div> 
-  <div class="row">
-    <form action=""> 
-      <div class="col-md-8">
-        <select class="form-control"name="proceso">
-          <option>Selecciona un Proceso</option>
-          <option>Credencializacion</option>
-          <option>Entrega de CFDI</option>
-          <option>Entrega de Contratos</option>
-        </select>
+  <div class="container-fluid fom">
+    <div class="row">
+      <div class="col-md-11">
+        <h3>PROCESO</h3>
       </div>
-      <div class="col-md-4">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-      </div>              
-    </form>
+      <div class="col-md-1 centrar">
+        <button type="button" class="btn btn-info">Agregar</button>
+      </div> 
+    <div class="row">
+      <form action=""> 
+        <div class="col-md-8">
+          <select class="form-control"name="proceso">
+            <option>Selecciona un Proceso</option>
+            <option>Credencializacion</option>
+            <option>Entrega de CFDI</option>
+            <option>Entrega de Contratos</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+        </div>              
+      </form>
+    </div>
+    <div class="row">
+      <table class="table table-hover tabla">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Proceso</th>
+            <th>
+            </th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td colspan="2">Mark</td>
+              <td>
+                <form action="">
+                  <button class="button"><i class="fa fa-pencil-square-o"></i></button>
+                  <button class="button"><i class="fa fa-trash-o"></i></button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td colspan="2">Jacob</td>
+              <td>
+                <form action="">
+                  <button class="button"><i class="fa fa-pencil-square-o"></i></button>
+                  <button class="button"><i class="fa fa-trash-o"></i></button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>
+                <form action="">
+                  <button class="button"><i class="fa fa-pencil-square-o"></i></button>
+                  <button class="button"><i class="fa fa-trash-o"></i></button>
+                </form>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
   </div>
-  <div class="row">
-    <table class="table table-hover tabla">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Proceso</th>
-          <th>
-          </th>
-        </tr>
-      </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td colspan="2">Mark</td>
-            <td>
-              <form action="">
-                <button class="button"><i class="fa fa-pencil-square-o"></i></button>
-                <button class="button"><i class="fa fa-trash-o"></i></button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td colspan="2">Jacob</td>
-            <td>
-              <form action="">
-                <button class="button"><i class="fa fa-pencil-square-o"></i></button>
-                <button class="button"><i class="fa fa-trash-o"></i></button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>
-              <form action="">
-                <button class="button"><i class="fa fa-pencil-square-o"></i></button>
-                <button class="button"><i class="fa fa-trash-o"></i></button>
-              </form>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-  </div>
-</div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-9 centrar2">
-      <button type="button" class="btn btn-info">Imprimir</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 centrar2">
+        <button type="button" class="btn btn-info">Imprimir</button>
+      </div>
+      <div class="col-md-3">
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+          </nav>
+      </div>
     </div>
-    <div class="col-md-3">
-      <nav aria-label="Page navigation">
-        <ul class="pagination">
-          <li>
-            <a href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li>
-            <a href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-        </nav>
-    </div>
-  </div>
-</div> 
+  </div> 

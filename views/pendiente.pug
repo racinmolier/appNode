@@ -1,134 +1,128 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles2.css"> 
-    <script src="https://kit.fontawesome.com/0c42fed630.js"></script>
-    <title>Area</title>
-</head>
+extends ./layouts/standar.pug
+block content
 
-<div class="container-fluid fom">
-  <div class="row">
-    <div class="col-md-11">
-      <h3>PENDIENTES</h3>
-    </div>
-    <div class="col-md-1 centrar">
-      <button type="button" class="btn btn-info">Agregar</button>
-    </div>   
-  </div>
-
-  <div class="row">
-    <form action=""> 
-      <div class="col-md-6">
-        <select class="form-control">
-          <option>unidad</option>
-          <option>J01 Jurisdiccion Pachuca</option>
-          <option>Direccion de Recursos Humanos</option>
-        </select>
+  <div class="container-fluid fom">
+    <div class="row">
+      <div class="col-md-11">
+        <h3>PENDIENTES</h3>
+      </div>
+      <div class="col-md-1 centrar">
+        <button type="button" class="btn btn-info">Agregar</button>
       </div>   
-      <div class="col-md-3">
-        <select class="form-control">
-          <option>Area</option>
-          <option>Sistematizacion de Pago</option>
-          <option>Relaciones Laborales</option>
-        </select>
-      </div>
-      <div class="col-md-3">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-      </div>              
-    </form>
-  </div>
+    </div>
 
-  <div class="row">
-    <form action=""> 
-      <div class="col-md-3">
-        <select class="form-control">
-          <option>Proceso</option>
-          <option>J01 Jurisdiccion Pachuca</option>
-          <option>Direccion de Recursos Humanos</option>
-        </select>
-      </div> 
-      <div class="col-md-3">
-        <select class="form-control">
-          <option>Fecha Inicio</option>
-          <option>J01 Jurisdiccion Pachuca</option>
-        </select>
-      </div>  
-      <div class="col-md-3">
-        <select class="form-control">
-          <option>Fecha Fin</option>
-          <option>Sistematizacion de Pago</option>
-          <option>Relaciones Laborales</option>
-        </select>
-      </div>
-      <div class="col-md-3">
-          <div class="col-md-1 centrar">
-            <button type="button" class="btn btn-info">Imprimir</button>
-          </div>  
-      </div>              
-    </form>
-  </div>
+    <div class="row">
+      <form action=""> 
+        <div class="col-md-6">
+          <select class="form-control">
+            <option>unidad</option>
+            <option>J01 Jurisdiccion Pachuca</option>
+            <option>Direccion de Recursos Humanos</option>
+          </select>
+        </div>   
+        <div class="col-md-3">
+          <select class="form-control">
+            <option>Area</option>
+            <option>Sistematizacion de Pago</option>
+            <option>Relaciones Laborales</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+        </div>              
+      </form>
+    </div>
 
-  <div class="row">
-    <table class="table table-hover tabla">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Unidad</th>
-          <th scope="col">Responsable</th>
-          <th scope="col">Telefono</th>
-          <th scope="col">Correo</th>
-          <th scope="col">Proceso</th>
-          <th>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td >Mark</td>
-          <td >Mark</td>
-          <td >Mark</td>
-          <td >Mark</td>
-          <td >Mark</td>
-          <td>
-            <form action="">
-              <button class="button"><i class="fa fa-pencil-square-o"></i></button>
-              <button class="button"><i class="fa fa-trash-o"></i></button>
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td >Jacob</td>
-          <td >Jacob</td>
-          <td >Jacob</td>
-          <td >Jacob</td>
-          <td >Jacob</td>
-          <td>
-            <form action="">
-              <button class="button"><i class="fa fa-pencil-square-o"></i></button>
-              <button class="button"><i class="fa fa-trash-o"></i></button>
-            </form>
-            </td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry the Bird</td>
-          <td>Larry the Bird</td>
-          <td>Larry the Bird</td>
-          <td>Larry the Bird</td>
-          <td>Larry the Bird</td>
-          <td>
+    <div class="row">
+      <form action=""> 
+        <div class="col-md-3">
+          <select class="form-control">
+            <option>Proceso</option>
+            <option>J01 Jurisdiccion Pachuca</option>
+            <option>Direccion de Recursos Humanos</option>
+          </select>
+        </div> 
+        <div class="col-md-3">
+          <select class="form-control">
+            <option>Fecha Inicio</option>
+            <option>J01 Jurisdiccion Pachuca</option>
+          </select>
+        </div>  
+        <div class="col-md-3">
+          <select class="form-control">
+            <option>Fecha Fin</option>
+            <option>Sistematizacion de Pago</option>
+            <option>Relaciones Laborales</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+            <div class="col-md-1 centrar">
+              <button type="button" class="btn btn-info">Imprimir</button>
+            </div>  
+        </div>              
+      </form>
+    </div>
+
+    <div class="row">
+      <table class="table table-hover tabla">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Unidad</th>
+            <th scope="col">Responsable</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Proceso</th>
+            <th>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td >Mark</td>
+            <td >Mark</td>
+            <td >Mark</td>
+            <td >Mark</td>
+            <td >Mark</td>
+            <td>
               <form action="">
                 <button class="button"><i class="fa fa-pencil-square-o"></i></button>
                 <button class="button"><i class="fa fa-trash-o"></i></button>
               </form>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>  
-</div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td >Jacob</td>
+            <td >Jacob</td>
+            <td >Jacob</td>
+            <td >Jacob</td>
+            <td >Jacob</td>
+            <td>
+              <form action="">
+                <button class="button"><i class="fa fa-pencil-square-o"></i></button>
+                <button class="button"><i class="fa fa-trash-o"></i></button>
+              </form>
+              </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry the Bird</td>
+            <td>Larry the Bird</td>
+            <td>Larry the Bird</td>
+            <td>Larry the Bird</td>
+            <td>Larry the Bird</td>
+            <td>
+                <form action="">
+                  <button class="button"><i class="fa fa-pencil-square-o"></i></button>
+                  <button class="button"><i class="fa fa-trash-o"></i></button>
+                </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>  
+  </div>
