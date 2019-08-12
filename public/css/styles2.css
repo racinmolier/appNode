@@ -4,7 +4,7 @@ body{
 .fom{
 	background-color: lightsteelblue;
 	width: 90%;
-    height:90%;
+    height:80%;
 	border-radius: 10px 10px 10px 10px;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -38,6 +38,7 @@ footer{
 }
 .centrar2{
 	padding-top: 20px;
+	padding-left: 40px;
 }
 .tabla {
 	background-color: aliceblue;
