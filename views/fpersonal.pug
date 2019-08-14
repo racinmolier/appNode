@@ -1,0 +1,92 @@
+extends ./layouts/standar.pug
+
+block content
+
+  <div class="container-fluid fom">
+    <form action="">
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4 form-group">
+            <label for="">Apellido Paterno del Responsable</label>
+        </div>
+        <div class="col-sm-8 col-md-8 col-lg-8 form-group">
+          <input type="text" class="form-control" name="apepat" id="apepat" placeholder="Apellido Paterno"required="true">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4 form-group">
+          <label for="">Apellido Materno del Responsable</label>
+        </div>
+        <div class="col-sm-8 col-md-8 col-lg-8 form-group">
+          <input type="text" class="form-control" name="apemat" id="apemat" placeholder="Apellido Materno"required="true">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4 form-group">
+          <label for="">Nombre del Responsable</label>
+        </div>
+        <div class="col-sm-8 col-md-8 col-lg-8 form-group">
+          <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre"required="true">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2 form-group">
+          <label for="">Telefono</label>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 form-group">
+          <input type="number" class="form-control" name="telefono" id="telefono" placeholder="Telefono"required="true">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 form-group">
+          <label for="">Correo</label>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-3 form-group">
+          <input type="email" class="form-control" name="correo" id="correo" placeholder="correo@dominio.com"required="true">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 form-group">
+          <label for="">Rol</label>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 form-group">
+          <select class="form-control" name="rol">
+            <option>Seleccionar el rol</option>
+            <option>Administrador</option>
+            <option>Mando</option>
+            <option>Responsables de RH</option>
+            <option>Responsables de Areas</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2 form-group">
+          <label for="password">Contraseña</label>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 form-group">
+          <input type="password" name="password" id="password">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 form-group">
+          <label for="password2">Repetir Contraseña</label>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 form-group">
+          <input type="password" name="password2" id="password2">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 form-group">
+          <label for="status">Activo</label>
+          <input type="checkbox" name="status" id="status"> 
+        </div>
+               
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 form-group">
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 form-group">
+          <button type="button" class="btn btn-info">Limpiar</button>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 form-group">
+          <button class="btn btn-info">Guardar</button>
+        </div>
+      </div>
+    </form>
+  </div>

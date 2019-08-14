@@ -15,6 +15,7 @@ var fareaRouter = require('./routes/farea');
 var funidadRouter = require('./routes/funidad');
 var fpendienteRouter = require('./routes/fpendiente');
 var fprocesoRouter = require('./routes/fproceso');
+var fpersonalRouter = require('./routes/fpersonal');
 
 
 
@@ -41,6 +42,7 @@ app.use('/farea', fareaRouter);
 app.use('/funidad', funidadRouter);
 app.use('/fproceso', fprocesoRouter);
 app.use('/fpendiente', fpendienteRouter);
+app.use('/fpersonal', fpersonalRouter);
 
 
 
