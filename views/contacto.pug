@@ -1,6 +1,33 @@
 extends ./layouts/standar.pug
 
 block content
-  h1= title
-  p Welcome to #{title}
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" id="cardForm">
+      <div class="col-md-6 col-xs-12">
+        <h2>Get In touch</h2>
+        <br>
+      </div>
+      <div class="col-md-6 col-xs-12">
+          <h2>Contactanos</h2>
+          <br>
+          <div class="form-group">
+            <input class="form-control" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <input class="form-control" placeholder="Correo">
+          </div>
+          <div class="form-group">
+            <input class="form-control" placeholder="Telefono">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Telefono">
+            </textarea>
+          </div>
+
+           <div class="form-group">
+            <button class="btn btn defautl" id="btnForm"> Enviar </button>
+          </div>
+      </div>
+    </div>
+  </div>
      
