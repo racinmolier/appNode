@@ -258,3 +258,65 @@ body {
 .img{
     justify-content:center;  
 }
+
+#contentBannerHome {
+  text-align: center;
+  color: cornsilk;
+  position: absolute;
+}
+
+#contentBannerHome h1{
+  margin-top: 30%;
+  font-size: 60px;
+}
+
+#contentBannerHome p{
+  font-size:30px;
+}
+#divServices{
+  background-color: #5fbae9;
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+#divServices h1{
+  text-align: center;
+}
+#divServices p{
+  text-align: center;
+  font-size: 20px;
+}
+.parallax {
+  background-image: url("/images/botella.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#divContent{
+  height:1000px;
+  background-color: #92badd;
+  padding-top: 50px;
+  padding-bottom: 50px;  
+}
+#divContent{
+  font-size:20px;
+}
+/*
+button:hover{
+  -webkit-box-shadow: -5px 27px 23px -7px rgba(245,245,245,1);
+-moz-box-shadow: -5px 27px 23px -7px rgba(245,245,245,1);
+box-shadow: -5px 27px 23px -7px rgba(245,245,245,1);
+font-family: 'Pacifico', cursive;
+}*/
+
+ .card{
+  background-color: aqua;
+  text-align: justify;
+
+ }
+ /*.espacios{
+   padding: 30px;
+ }*/
+ 
+

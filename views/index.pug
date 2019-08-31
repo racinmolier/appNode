@@ -1,44 +1,105 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sistema de Pendientes</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+extends ./layouts/standar.pug
 
-<div class="container-fluid">
-  <div class="row contenedor">
-    <div class="img">
-      <img class="img2"src="./images/salud.png" alt="" height="70px">
-    </div>
-    <div class="img">
-        <img class="img2" src="./images/hgo.png" alt="" height="80px">
-    </div>
-    <div class="img">
-        <img class="img2" src="./images/escudo.png" alt="" height="80px">
+block content
+  <link rel="stylesheet" media="screen" href="css/particles.css">
+  <div id="particles-js">
+    <div class="col-md-6 col-md-offset-3" id="contentBannerHome">
+      <h1>My page</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid deleniti architecto temporibus voluptate veniam ducimus soluta nobis omnis, modi eveniet exercitationem consequuntur ipsam dolore, laborum facilis. Voluptatem, dolores porro?</p>
+      <button class="btn btn-success">GET STARTED</button>
     </div>
   </div>
-</div>
+  <div id="divServices" class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h1>My Services</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas dolore odio corrupti hic, placeat veniam aspernatur animi accusantium repellat fugiat quaerat tenetur praesentium dolor, beatae molestias laudantium pariatur magnam quos.</p>
+      <div class="container-fluid">
+         
+         <div class="row">
+          <div class="espacios">
+            <div class="col-md-4 card">
+               <img src="./images/copa.jpg" alt=""class="img-thumbnail">
+               <h3>titulo</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi incidunt est nesciunt, expedita quibusdam provident pariatur vel deserunt nam odit neque exercitationem voluptas, natus illum laborum perferendis libero dolor?</p>
+               <button class ="btn btn-dark">Read</button>
+            </div>
+          </div>
 
-<div class="wrapper fadeInDown">
-  <p>PENDIENTES</p>
-  <div id="formContent">
-    <br> 
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="USUARIO" required="true">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="CONTRASEÑA" required="true">
-      <input type="submit" class="fadeIn fourth" value="ACCESAR">
-    </form>
-    <br>
+          <div class="espacios">     
+            <div class="col-md-4 card">
+               <img src="./images/coctel.jpg" alt="" class="img-thumbnail">
+               <h3>titulo</h3>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, aliquam culpa ullam autem qui nesciunt minima, alias quisquam non magni dignissimos velit harum repellat hic quidem? Tenetur sapiente pariatur laborum!</p>
+               <button class ="btn btn-dark">Read</button>
+            </div>
+          </div>
+
+          <div class="espacios">     
+            <div class="col-md-4 card">
+               <img src="./images/coctel.jpg" alt="" class="img-thumbnail">
+               <h3>titulo</h3>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, aliquam culpa ullam autem qui nesciunt minima, alias quisquam non magni dignissimos velit harum repellat hic quidem? Tenetur sapiente pariatur laborum!</p>
+               <button class ="btn btn-dark">Read</button>
+            </div>
+          </div>
+         </div>
+         <br> 
+         <br> 
+         <br> 
+    </div>
+    </div>
   </div>
-</div>
-</body>
-</html>
+  <div class="parallax"></div>
 
+  <div id="divContent" class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-6 col-xs-12">
+          <h1>Make beauty Things With Passion.</h1>
+          <br>
+          <button class="btn btn-success"> READ MORE</button>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="skills sm-m-20px-b">
+            <div class="progress-lt">
+              <h6>HTML</h6>
+              <span>92%</span>
+              <div class="progress">
+                <div class="progress-bar theme-g-bg" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width: 92%;">
+                </div>
+              </div>
+            </div>
+            <div class="progress-lt">
+              <h6>CSS</h6>
+              <span>84%</span>
+              <div class="progress">
+                <div class="progress-bar theme-g-bg" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" style="width: 84%;">
+                </div>
+              </div>
+            </div>
+            <div class="progress-lt">
+              <h6>JavaScript</h6>
+              <span>88%</span>
+              <div class="progress">
+                <div class="progress-bar theme-g-bg" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%;">
+                </div>
+              </div>
+            </div>
+            <div class="progress-lt">
+              <h6>PHp</h6>
+              <span>95%</span>
+              <div class="progress">
+                <div class="progress-bar theme-g-bg" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling. to remove the background-attachment property to remove the scrolling effect.</p>
+
+  
+  <script src="js/particles/particles.js"> </script>
+  <script src="js/particles/app.js"> </script>
+  <script src="js/particles/lib/stats.js"> </script>
      
 
 
